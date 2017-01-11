@@ -1,5 +1,5 @@
 var display = document.getElementById('display');
-var click = document.getElementById('click');
+var click = document.getElementById('cook');
 var multiply = document.getElementById('multiply');
 var autoclick = document.getElementById('autoclick');
 var bonus = document.getElementById('bonus');
