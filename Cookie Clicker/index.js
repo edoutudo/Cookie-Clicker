@@ -65,7 +65,22 @@ function buttonsEnabler() {
   autoclickEnabler();
   bonusEnabler();
 }
+function cliclCookie(evt) {
+ var sc=document.createElement("div");
+  sc.innerHTML="+ " +clickValue;
+  sc.setAttribute("class", "flottant")
+  sc.style.top=evt.clientY+"px"
+  sc.style.left=evt.clientX+"px"
 
+
+  document.getElementById('cookie').appendChild(sc)
+
+  setTimeout(function(){
+    document.getElementById('cookie').removeChild(sc)
+   }, 1000)
+
+  increaseScore()
+}
 function increaseScore() {
   score += clickValue;
   buttonsEnabler();
@@ -134,7 +149,7 @@ multiply.disabled = true;
 autoclick.disabled = true;
 bonus.disabled = true;
 
-click.addEventListener('click', increaseScore);
+click.addEventListener('click', cliclCookie);
 multiply.addEventListener('click', increaseMultiplier);
 autoclick.addEventListener('click', enableAutoclick);
 bonus.addEventListener('click', enableBonus);
