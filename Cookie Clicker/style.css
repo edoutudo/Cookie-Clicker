@@ -30,6 +30,7 @@ input {
 }
 
 #cook{
+
 	margin-left: 50px;
 	margin-top: 400px;
 	height: 350px;
@@ -39,6 +40,7 @@ input {
 }
 
 #cook:active{
+
     -ms-transform: scale(0.8, 0.8); /* IE 9 */
     -webkit-transform: scale(0.8, 0.8); /* Safari */
     transform: scale(0.8, 0.8);
@@ -55,3 +57,22 @@ input {
 #bonus{
 	background-color: red;
 }
+.flottant{
+	animation-duration: 3s;
+  	animation-name: slidein;
+	pointer-events:none;
+	position:absolute;
+	font-size:20px;
+	font-weight: bold;
+	color:blue;
+}
+@keyframes slidein {
+  from {
+  	opacity:1;
+    		  }
+
+  to {
+    	top:0;
+    	left:50%;
+    	opacity:0;
+  }
